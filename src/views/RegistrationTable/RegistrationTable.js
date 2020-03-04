@@ -10,7 +10,6 @@ import {
   DropdownItem,
   UncontrolledDropdown,
   DropdownToggle,
-  Media,
   Pagination,
   PaginationItem,
   PaginationLink,
@@ -18,13 +17,13 @@ import {
   Table,
   Container,
   Row,
-  UncontrolledTooltip
 } from "reactstrap";
 // core components
 
 import Header from "components/Headers/Header.js";
+import RegistrationModal from "./RegistrationModal"
 
-class Tables extends React.Component {
+class RegistrationTable extends React.Component {
   render() {
     return (
       <>
@@ -35,8 +34,9 @@ class Tables extends React.Component {
           <Row>
             <div className="col">
               <Card className="shadow">
-                <CardHeader className="border-0">
-                  <h3 className="mb-0">운영관리장부</h3>
+                <CardHeader className="border-0 d-flex align-items-center">
+                  <h3 className="mb-0 mr-5 ">운영관리장부</h3>
+                  <RegistrationModal  buttonLabel = "+"/>
                 </CardHeader>
                 <Table className="align-items-center table-flush" responsive>
                   <thead className="thead-light">
@@ -336,4 +336,4 @@ class Tables extends React.Component {
   }
 }
 
-export default Tables;
+export default RegistrationTable;

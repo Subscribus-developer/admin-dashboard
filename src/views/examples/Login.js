@@ -113,7 +113,7 @@ class Login extends React.Component {
                   </label>
                 </div>
                 <div className="text-center">
-                  <Button className="my-4" color="primary" type="button">
+                  <Button className="my-4" color="primary" type="button" onClick = {()=> {alert("Data entered")}} >
                     Sign in
                   </Button>
                 </div>
