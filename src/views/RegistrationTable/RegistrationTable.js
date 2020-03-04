@@ -1,5 +1,4 @@
 import React from "react";
-
 // reactstrap components
 import {
   Badge,
@@ -17,11 +16,13 @@ import {
   Table,
   Container,
   Row,
+  Button,
 } from "reactstrap";
-// core components
 
+// core components
 import Header from "components/Headers/Header.js";
-import RegistrationModal from "./RegistrationModal"
+import RegistrationModal from "./RegistrationModal";
+import App from "../Calendar/Calendar";
 
 class RegistrationTable extends React.Component {
   render() {
@@ -37,6 +38,7 @@ class RegistrationTable extends React.Component {
                 <CardHeader className="border-0 d-flex align-items-center">
                   <h3 className="mb-0 mr-5 ">운영관리장부</h3>
                   <RegistrationModal  buttonLabel = "+"/>
+                  <Button color = "danger" className = "ml-5">Calendar</Button>
                 </CardHeader>
                 <Table className="align-items-center table-flush" responsive>
                   <thead className="thead-light">
@@ -108,7 +110,7 @@ class RegistrationTable extends React.Component {
                           <DropdownMenu className="dropdown-menu-arrow" right>
                             <DropdownItem
                               href="#pablo"
-                              onClick={e => e.preventDefault()}
+                              onClick = {e => e.preventDefault()}
                             >
                               Edit
                             </DropdownItem>

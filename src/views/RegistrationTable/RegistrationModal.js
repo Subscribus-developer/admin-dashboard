@@ -6,7 +6,7 @@ import {
   ModalBody,
   ModalFooter,
   Card,
-  CardHeader,
+  // CardHeader,
   CardBody,
   FormGroup,
   Form,
@@ -16,7 +16,7 @@ import {
 } from "reactstrap";
 
 const RegistrationModal = props => {
-  const { buttonLabel, className, style } = props;
+  const { buttonLabel, className  } = props;
 
   const [modal, setModal] = useState(false);
 
