@@ -22,7 +22,6 @@ import {
 // core components
 import Header from "components/Headers/Header.js";
 import RegistrationModal from "./RegistrationModal";
-import App from "../Calendar/Calendar";
 
 class RegistrationTable extends React.Component {
   render() {
